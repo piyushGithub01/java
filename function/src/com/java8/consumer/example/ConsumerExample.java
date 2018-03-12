@@ -22,6 +22,9 @@ public class ConsumerExample {
 		//consumer chaining
 		Consumer<Employee> empDetailsPrinter = empPrinter.andThen(new AgeAlertConsumer());
 		printEmployeeDetails(employeeList, empDetailsPrinter);
+		
+		//BiConsumer 
+		new AgePrinterBiConsumer().accept("FEMALE", 25);
 	}
 	
 	public static void printEmployeeDetails(List<Employee> empList, Consumer<Employee> employeeConsumer) {

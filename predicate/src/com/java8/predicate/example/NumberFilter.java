@@ -45,6 +45,10 @@ public class NumberFilter {
 		//passing predicate to function
 		filterNumber(numbers, greaterThan18AndDivisibleBy5).forEach(n -> {System.out.print(n + " ");});
 		System.out.println("");
+		
+		//BiPredicate
+		boolean eligibleForMarriage = new MarriageEligibleBiPredicate().test("MALE", 25);
+		System.out.println(" eligible for marriage : " + eligibleForMarriage);
 
 	}
 	

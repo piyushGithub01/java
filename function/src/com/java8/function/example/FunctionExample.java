@@ -60,6 +60,9 @@ public class FunctionExample {
 		System.out.println("Employee object to lower case employee names");
 		empLowercaseNames.forEach(System.out::println);
 		System.out.println(" ");
+		
+		int combinedAge = new AgeAdderBiFunction().apply(new Employee("Mathew",  35), new Employee("Gilli", 30));
+		System.out.println(" combined age of employee is : " + combinedAge);
 	}
 
 	public static List<String> convertEmployeeListToEmpNameList(List<Employee> empList,
