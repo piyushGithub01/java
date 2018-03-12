@@ -16,3 +16,7 @@ BiPredicate:
 BiConsumer:
 
 BiFunction:
+
+base64: java8 base64 api
+
+concurrency: 
